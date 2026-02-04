@@ -353,7 +353,7 @@ export default function Portfolio() {
                 <Mail size={20} />
                 Send Email
               </a>
-              <a href="/Resume-HunterBrickers.pdf" download className="px-8 py-4 border border-cyan-500/50 rounded-lg font-semibold hover:bg-cyan-500/10 transition-all">
+              <a href={`${import.meta.env.BASE_URL}resumeHunterBrickers.pdf`} download className="px-8 py-4 border border-cyan-500/50 rounded-lg font-semibold hover:bg-cyan-500/10 transition-all">
                 Download Resume
               </a>
             </div>
