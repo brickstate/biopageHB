@@ -68,36 +68,46 @@ export default function Portfolio() {
   ];
 
   const skills = {
-    "Frontend": ["React", "TypeScript", "JavaScript", "HTML/CSS", "Tailwind CSS", "Redux"],
-    "Backend": ["Node.js", "Express", "Python", "RESTful APIs", "GraphQL"],
-    "Database": ["PostgreSQL", "MongoDB", "MySQL", "Redis"],
-    "Tools": ["Git", "Docker", "AWS", "CI/CD", "Jest", "Webpack"]
+    "Frontend": ["React", "TypeScript", "JavaScript", "HTML/CSS", "Tailwind CSS", "D3.js"],
+    "Backend": ["Node.js", "Express", "Python", "RESTful APIs"],
+    "Database": ["MySQL", "Database Schema Design"],
+    "Tools": ["Git", "Google Cloud Platform", "Docker", "CI/CD", "Websockets"]
   };
 
   const experience = [
     {
-      role: "Software Developer",
-      company: "Tech Solutions Inc.",
-      period: "2022 - Present",
-      description: "Developed and maintained web applications serving 50K+ users. Improved application performance by 40% through code optimization and caching strategies."
+      role: "Clinic IT Intern",
+      company: "Interprofessional Clinic, Appalachian Institute for Health and Wellness",
+      period: "Summer 2023",
+      description: [
+        "Resolved network connectivity issues in a timely manner",
+        "Utilized electronic health record platforms to help aid healthcare providers delivering service to patients",
+        "Installed software updates and patches to machines in accordance to HIPAA legislation",
+        "Configured a machine which would help aid healthcare providers in diagnosing autism early in young children",
+        "Documented the program and the technical assessment which the machine conducted"
+      ]
     },
     {
-      role: "Junior Developer",
-      company: "StartUp Innovations",
-      period: "2020 - 2022",
-      description: "Built responsive user interfaces and collaborated with cross-functional teams. Implemented automated testing, reducing bugs by 30%."
+      role: "Server & Bartender",
+      company: "Macado's",
+      period: "2023 - 2025",
+      description: [
+        "Balanced multiple parallel tasks under pressure, prioritizing orders and workflow to minimize wait times and errors",
+        "Delivered customer focused problem resolution, quickly addressing issues and adapting to changing conditions",
+        "Tasked with effectively serving and making point of sale interactions with about 30 individuals at any given time through busy hours"
+      ]
     }
   ];
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-100">
       {/* Animated background elements */}
-      <div className="fixed inset-0 w-full h-full overflow-hidden pointer-events-none bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950" style={{zIndex: -1}}>
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse" style={{animationDuration: '4s'}}></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl animate-pulse" style={{animationDuration: '6s', animationDelay: '1s'}}></div>
+      <div className="fixed inset-0 w-full h-full overflow-hidden pointer-events-none bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950" style={{ zIndex: -1 }}>
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '4s' }}></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '6s', animationDelay: '1s' }}></div>
       </div>
 
-      <div className="relative" style={{zIndex: 1}}>
+      <div className="relative" style={{ zIndex: 1 }}>
         {/* Navigation */}
         <nav className="fixed top-0 w-full bg-slate-950/80 backdrop-blur-lg border-b border-cyan-500/20 z-50">
           <div className="max-w-6xl mx-auto px-6 py-4">
@@ -110,9 +120,8 @@ export default function Portfolio() {
                   <button
                     key={section}
                     onClick={() => scrollToSection(section)}
-                    className={`capitalize transition-all hover:text-cyan-400 ${
-                      activeSection === section ? 'text-cyan-400 font-semibold' : 'text-slate-400'
-                    }`}
+                    className={`capitalize transition-all hover:text-cyan-400 ${activeSection === section ? 'text-cyan-400 font-semibold' : 'text-slate-400'
+                      }`}
                   >
                     {section}
                   </button>
@@ -127,48 +136,48 @@ export default function Portfolio() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="text-cyan-400 text-lg mb-4 font-mono" style={{animationDelay: '0.2s'}}>
+                <div className="text-cyan-400 text-lg mb-4 font-mono" style={{ animationDelay: '0.2s' }}>
                   Hello, I'm
                 </div>
-                <h1 className="text-6xl font-bold mb-6 leading-tight" style={{animationDelay: '0.4s'}}>
+                <h1 className="text-6xl font-bold mb-6 leading-tight" style={{ animationDelay: '0.4s' }}>
                   <span className="bg-gradient-to-r from-cyan-400 via-emerald-400 to-cyan-400 bg-clip-text text-transparent">
                     Hunter A. Brickers
                   </span>
                 </h1>
-                <h2 className="text-3xl text-slate-300 mb-6" style={{animationDelay: '0.6s'}}>
+                <h2 className="text-3xl text-slate-300 mb-6" style={{ animationDelay: '0.6s' }}>
                   Full Stack Software Developer
                 </h2>
-                <p className="text-slate-400 text-lg leading-relaxed mb-8" style={{animationDelay: '0.8s'}}>
-                  Passionate about creating elegant solutions to complex problems. 
-                  Specializing in building scalable web applications with modern technologies 
+                <p className="text-slate-400 text-lg leading-relaxed mb-8" style={{ animationDelay: '0.8s' }}>
+                  Passionate about creating elegant solutions to complex problems.
+                  Specializing in building scalable web applications with modern technologies
                   and best practices.
                 </p>
-                <div className="flex gap-4" style={{animationDelay: '1s'}}>
+                <div className="flex gap-4" style={{ animationDelay: '1s' }}>
                   <a href="#contact" className="px-6 py-3 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all">
-                    Get In Touch
+                    Contact
                   </a>
                   <a href="#projects" className="px-6 py-3 border border-cyan-500/50 rounded-lg font-semibold hover:bg-cyan-500/10 transition-all">
                     View Projects
                   </a>
                 </div>
                 <div className="flex gap-6 mt-8">
-                  <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors">
+                  <a href="https://github.com/brickstate" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors">
                     <Github size={24} />
                   </a>
-                  <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors">
+                  <a href="https://www.linkedin.com/in/hunterbrickers/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors">
                     <Linkedin size={24} />
                   </a>
-                  <a href="mailto:your.email@example.com" className="text-slate-400 hover:text-cyan-400 transition-colors">
+                  <a href="mailto:brickersan@gmail.com" className="text-slate-400 hover:text-cyan-400 transition-colors">
                     <Mail size={24} />
                   </a>
                 </div>
               </div>
               <div className="relative">
                 <div className="w-full aspect-square rounded-2xl bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 backdrop-blur-sm border border-cyan-500/30 overflow-hidden flex items-center justify-center">
-                  <img 
+                  <img
                     src={profileImage}
                     // If using import method, change above line to: src={profileImage}
-                    alt="Profile" 
+                    alt="Profile"
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       e.target.style.display = 'none';
@@ -191,18 +200,27 @@ export default function Portfolio() {
             <div className="grid md:grid-cols-2 gap-12">
               <div className="space-y-4 text-slate-300 leading-relaxed">
                 <p>
-                  I'm a software developer with a passion for building exceptional digital experiences. 
-                  My journey into development started during college when I built my first web application, 
+                  I'm a software developer with a passion for building exceptional digital experiences.
+                  My journey into development started during college when I built my first web application,
                   and I've been hooked ever since.
                 </p>
                 <p>
-                  I specialize in full-stack development with a focus on creating intuitive, user-friendly 
-                  interfaces backed by robust, scalable systems. I love solving complex problems and 
+                  I specialize in full stack development with a focus on creating intuitive, user friendly
+                  interfaces backed by robust, scalable systems. I love solving complex problems and
                   continuously learning new technologies.
+
+                  Recently I have been mainly occupied with working on a web application algorithm to
+                  model membership tracking. This has only been possible by making the best use of
+                  community React documentation, Common Lisp textbooks, and graphing javascript libraries.
                 </p>
+                {/* 
                 <p>
-                  When I'm not coding, you can find me contributing to open-source projects, writing 
-                  technical blog posts, or exploring new frameworks and tools.
+                Extra space
+                </p>
+                */ }
+                <p>
+                  When I'm not coding, you can find me working on my home gym, reading my favorite thrillers,
+                  or exploring new frameworks and tools.
                 </p>
               </div>
               <div className="space-y-6">
@@ -210,14 +228,17 @@ export default function Portfolio() {
                   <GraduationCap className="text-cyan-400 mb-3" size={32} />
                   <h3 className="text-xl font-semibold mb-2">Education</h3>
                   <p className="text-slate-400">B.S. in Computer Science</p>
-                  <p className="text-slate-500">University Name, 2020</p>
+                  <p className="text-slate-500">Appalachian State University, December 2025</p>
                 </div>
+
+                {/* Fix this section when you get more certifications. either cyber security or web dev or database */}
+                { /* 
                 <div className="p-6 rounded-xl bg-slate-800/50 border border-emerald-500/20 hover:border-emerald-500/40 transition-all">
                   <Award className="text-emerald-400 mb-3" size={32} />
                   <h3 className="text-xl font-semibold mb-2">Certifications</h3>
                   <p className="text-slate-400">AWS Certified Developer</p>
                   <p className="text-slate-400">React Professional Certificate</p>
-                </div>
+                </div>  */}
               </div>
             </div>
           </div>
@@ -242,7 +263,18 @@ export default function Portfolio() {
                     </div>
                     <div className="text-slate-400 font-mono mt-2 md:mt-0">{exp.period}</div>
                   </div>
-                  <p className="text-slate-400 leading-relaxed">{exp.description}</p>
+                  {Array.isArray(exp.description) ? (
+                    <ul className="space-y-2">
+                      {exp.description.map((item, i) => (
+                        <li key={i} className="text-slate-400 leading-relaxed flex items-start gap-3">
+                          <span className="text-cyan-400 mt-1.5">•</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-slate-400 leading-relaxed">{exp.description}</p>
+                  )}
                 </div>
               ))}
             </div>
@@ -310,18 +342,18 @@ export default function Portfolio() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6 flex items-center justify-center gap-3">
               <span className="text-cyan-400">05.</span>
-              Get In Touch
+              Contact
             </h2>
             <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-              I'm currently open to new opportunities and interesting projects. 
+              I'm currently open to new opportunities and interesting projects.
               Whether you have a question or just want to say hi, feel free to reach out!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href="mailto:your.email@example.com" className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all flex items-center gap-2">
+              <a href="mailto:brickersan@gmail.com" className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all flex items-center gap-2">
                 <Mail size={20} />
                 Send Email
               </a>
-              <a href="/resume.pdf" download className="px-8 py-4 border border-cyan-500/50 rounded-lg font-semibold hover:bg-cyan-500/10 transition-all">
+              <a href="/Resume-HunterBrickers.pdf" download className="px-8 py-4 border border-cyan-500/50 rounded-lg font-semibold hover:bg-cyan-500/10 transition-all">
                 Download Resume
               </a>
             </div>
@@ -332,7 +364,7 @@ export default function Portfolio() {
         <footer className="py-8 px-6 border-t border-slate-800">
           <div className="max-w-6xl mx-auto text-center text-slate-400">
             <p>Built with React & Tailwind CSS</p>
-            <p className="text-sm mt-2">© 2024 Your Name. All rights reserved.</p>
+            <p className="text-sm mt-2">© 2024 Hunter Brickers.</p>
           </div>
         </footer>
       </div>
