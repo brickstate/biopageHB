@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, ExternalLink, Code2, Briefcase, GraduationCap, Award } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink, Code2, ChartNetwork, Briefcase, GraduationCap, Award } from 'lucide-react';
 
 import profileImage from './assets/profile.jpg';
 
@@ -46,24 +46,36 @@ export default function Portfolio() {
     }
   };
 
+  {/* FIX the URL for the Network Modeling Project. Add correct files to it*/}
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack React application with Node.js backend, featuring real-time inventory management and payment processing.",
-      tech: ["React", "Node.js", "MongoDB", "Stripe API"],
-      link: "#"
+      title: "Network Modeling Visualization",
+      description: "Full stack React application with Node.js backend, "+
+                   "featuring real time network modeling animations processed through a javascript graphical library. "+
+                   "Earlier versions use an in browser REPL to design and animate the network model, "+
+                   "and later versions use a Common Lisp REPL for better data handling.",
+      tech: ["React", "UX Design", "Node.js", "D3.js", "Express.js", "JSON", "Common Lisp", "SLIME REPL"],
+      link: "https://github.com/brickstate"
     },
     {
-      title: "Task Management Dashboard",
-      description: "Collaborative project management tool with drag-and-drop functionality and real-time updates using WebSockets.",
-      tech: ["React", "TypeScript", "Socket.io", "PostgreSQL"],
-      link: "#"
+      title: "Generic Card Game API",
+      description: "Developed a Generic Card Game REST API that modeled core entities such as decks, hands, players, "+
+                   "and game states, with endpoints for shuffling, dealing, drawing, and updating game state. "+
+                   "Designed a modular architecture with clean schemas and predictable request/response patterns for "+
+                   "easy client integration. Implemented validation, rule enforcement, and error handling to ensure "+
+                   "data integrity and consistent gameplay behavior.",
+      tech: ["RESTful API", "MySQL", "Database Schema Design", "JSON", "Postman", "JavaScript", "Google Cloud Platform VM's"],
+      link: "https://github.com/brickstate/UNO-API"
     },
     {
-      title: "Weather Analytics App",
-      description: "Mobile-responsive weather application with data visualization and location-based forecasting.",
-      tech: ["React", "Chart.js", "OpenWeather API", "Tailwind"],
-      link: "#"
+      title: "Text-Based Adventure Game",
+      description: "BooneBauchery is a text based adventure game where the player navigates a narrative about a computer "+
+                   "science student deciding how to spend the evening, with branching choices and story progression. "+
+                   "The game combines interactive storytelling with artistically edited scenes "+
+                   "to enhance the experience. It was developed as a final project for a Software Engineering course, "+
+                   "written in Java and run via Maven and JavaFX.",
+      tech: ["Java", "Maven", "JavaFX", "Photo Editing", "UI Development"],
+      link: "https://github.com/brickstate/BooneBauchery"
     }
   ];
 
@@ -227,8 +239,12 @@ export default function Portfolio() {
                 <div className="p-6 rounded-xl bg-slate-800/50 border border-cyan-500/20 hover:border-cyan-500/40 transition-all">
                   <GraduationCap className="text-cyan-400 mb-3" size={32} />
                   <h3 className="text-xl font-semibold mb-2">Education</h3>
+                  
                   <p className="text-slate-400">B.S. in Computer Science</p>
                   <p className="text-slate-500">Appalachian State University, December 2025</p>
+                  <br/>
+                  <p className="text-slate-400">Associate of Arts </p>
+                  <p className="text-slate-500">Central Piedmont Community College, Decemebr 2022</p>
                 </div>
 
                 {/* Fix this section when you get more certifications. either cyber security or web dev or database */}
@@ -288,11 +304,15 @@ export default function Portfolio() {
               <span className="text-cyan-400">03.</span>
               Featured Projects
             </h2>
+            {/*FIX THE ICONS FOR THE PROJECTS.
+               Right now it is one icon shared on all project cards.*/}
+            {/*Pay attention to the <ChartNetwork/> tag and how it is used here.
+               We need to be able to set what icon is for what card in a better to have custom icons for each card*/}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project, index) => (
                 <div key={index} className="group p-6 rounded-xl bg-slate-800/30 border border-slate-700/50 hover:border-cyan-500/50 transition-all hover:transform hover:scale-105">
                   <div className="flex items-start justify-between mb-4">
-                    <Briefcase className="text-cyan-400 group-hover:text-emerald-400 transition-colors" size={32} />
+                    <ChartNetwork className="text-cyan-400 group-hover:text-emerald-400 transition-colors" size={32} />
                     <a href={project.link} className="text-slate-400 hover:text-cyan-400 transition-colors">
                       <ExternalLink size={20} />
                     </a>
@@ -364,7 +384,7 @@ export default function Portfolio() {
         <footer className="py-8 px-6 border-t border-slate-800">
           <div className="max-w-6xl mx-auto text-center text-slate-400">
             <p>Built with React & Tailwind CSS</p>
-            <p className="text-sm mt-2">© 2024 Hunter Brickers.</p>
+            <p className="text-sm mt-2">© 2026 Hunter Brickers</p>
           </div>
         </footer>
       </div>
