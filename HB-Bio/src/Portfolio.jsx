@@ -366,6 +366,7 @@ export default function Portfolio() {
             </h2>
             <p className="text-slate-400 text-lg mb-8 leading-relaxed">
               I'm currently open to new opportunities and interesting projects.
+              <br/>
               Whether you have a question or just want to say hi, feel free to reach out!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
