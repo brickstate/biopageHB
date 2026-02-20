@@ -94,7 +94,7 @@ export default function Portfolio() {
     {
       role: "Web & Technology Specialist Intern",
       company: "SEC Marketing Group",
-      period: "February 2023",
+      period: "February 2023 - Current",
       description: [
         "Developed and maintained client websites with custom front-end components using JavaScript, HTML, and CSS",
         "Implemented technical SEO optimizations",
@@ -121,7 +121,7 @@ export default function Portfolio() {
     {
       role: "Server & Bartender",
       company: "Macado's",
-      period: "2023 - 2025",
+      period: "April 2023 - December 2025",
       description: [
         "Balanced multiple parallel tasks under pressure, prioritizing orders and workflow to minimize wait times and errors",
         "Delivered customer focused problem resolution, quickly addressing issues and adapting to changing conditions",
