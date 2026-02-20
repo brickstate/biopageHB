@@ -7,6 +7,10 @@ export default function Portfolio() {
   const [activeSection, setActiveSection] = useState('about');
   const [isVisible, setIsVisible] = useState(false);
 
+  function Logo() {
+    return <Code2 size={48} color="#61dafb" />;
+  }
+
   useEffect(() => {
     setIsVisible(true);
 
@@ -46,34 +50,34 @@ export default function Portfolio() {
     }
   };
 
-  {/* FIX the URL for the Network Modeling Project. Add correct files to it*/}
+  {/* FIX the URL for the Network Modeling Project. Add correct files to it*/ }
   const projects = [
     {
       title: "Network Modeling Visualization",
-      description: "Full stack React application with Node.js backend, "+
-                   "featuring real time network modeling animations processed through a javascript graphical library. "+
-                   "Earlier versions use an in browser REPL to design and animate the network model, "+
-                   "and later versions use a Common Lisp REPL for better data handling.",
+      description: "Full stack React application with Node.js backend, " +
+        "featuring real time network modeling animations processed through a javascript graphical library. " +
+        "Earlier versions use an in browser REPL to design and animate the network model, " +
+        "and later versions use a Common Lisp REPL for better data handling.",
       tech: ["React", "UX Design", "Node.js", "D3.js", "Express.js", "JSON", "Common Lisp", "SLIME REPL"],
       link: "https://github.com/brickstate"
     },
     {
       title: "Generic Card Game API",
-      description: "Developed a Generic Card Game REST API that modeled core entities such as decks, hands, players, "+
-                   "and game states, with endpoints for shuffling, dealing, drawing, and updating game state. "+
-                   "Designed a modular architecture with clean schemas and predictable request/response patterns for "+
-                   "easy client integration. Implemented validation, rule enforcement, and error handling to ensure "+
-                   "data integrity and consistent gameplay behavior.",
+      description: "Developed a Generic Card Game REST API that modeled core entities such as decks, hands, players, " +
+        "and game states, with endpoints for shuffling, dealing, drawing, and updating game state. " +
+        "Designed a modular architecture with clean schemas and predictable request/response patterns for " +
+        "easy client integration. Implemented validation, rule enforcement, and error handling to ensure " +
+        "data integrity and consistent gameplay behavior.",
       tech: ["RESTful API", "MySQL", "Database Schema Design", "JSON", "Postman", "JavaScript", "Google Cloud Platform VM's"],
       link: "https://github.com/brickstate/UNO-API"
     },
     {
       title: "Text-Based Adventure Game",
-      description: "BooneBauchery is a text based adventure game where the player navigates a narrative about a computer "+
-                   "science student deciding how to spend the evening, with branching choices and story progression. "+
-                   "The game combines interactive storytelling with artistically edited scenes "+
-                   "to enhance the experience. It was developed as a final project for a Software Engineering course, "+
-                   "written in Java and run via Maven and JavaFX.",
+      description: "BooneBauchery is a text based adventure game where the player navigates a narrative about a computer " +
+        "science student deciding how to spend the evening, with branching choices and story progression. " +
+        "The game combines interactive storytelling with artistically edited scenes " +
+        "to enhance the experience. It was developed as a final project for a Software Engineering course, " +
+        "written in Java and run via Maven and JavaFX.",
       tech: ["Java", "Maven", "JavaFX", "Photo Editing", "UI Development"],
       link: "https://github.com/brickstate/BooneBauchery"
     }
@@ -139,8 +143,9 @@ export default function Portfolio() {
         <nav className="fixed top-0 w-full bg-slate-950/80 backdrop-blur-lg border-b border-cyan-500/20 z-50">
           <div className="max-w-6xl mx-auto px-6 py-4">
             <div className="flex justify-between items-center">
-              <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
-                Hunter B.
+              <div className="flex items-center gap-2 text-2xl font-bold bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
+                <Code2 size={28} className="text-cyan-400" />
+                Hunter B. - Software Developer
               </div>
               <div className="flex gap-6">
                 {['about', 'experience', 'projects', 'skills', 'contact'].map((section) => (
@@ -254,10 +259,10 @@ export default function Portfolio() {
                 <div className="p-6 rounded-xl bg-slate-800/50 border border-cyan-500/20 hover:border-cyan-500/40 transition-all">
                   <GraduationCap className="text-cyan-400 mb-3" size={32} />
                   <h3 className="text-xl font-semibold mb-2">Education</h3>
-                  
+
                   <p className="text-slate-400">B.S. in Computer Science, cum laude</p>
                   <p className="text-slate-500">Appalachian State University, December 2025</p>
-                  <br/>
+                  <br />
                   <p className="text-slate-400">Associate of Arts </p>
                   <p className="text-slate-500">Central Piedmont Community College, Decemebr 2022</p>
                 </div>
@@ -381,7 +386,7 @@ export default function Portfolio() {
             </h2>
             <p className="text-slate-400 text-lg mb-8 leading-relaxed">
               I'm currently open to new opportunities and interesting projects.
-              <br/>
+              <br />
               Whether you have a question or just want to say hi, feel free to reach out!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
