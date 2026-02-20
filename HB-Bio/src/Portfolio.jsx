@@ -88,6 +88,19 @@ export default function Portfolio() {
 
   const experience = [
     {
+      role: "Web & Technology Specialist Intern",
+      company: "SEC Marketing Group",
+      period: "February 2023",
+      description: [
+        "Developed and maintained client websites with custom front-end components using JavaScript, HTML, and CSS",
+        "Implemented technical SEO optimizations",
+        "Improved site performance through page speed optimization and responsive design adjustments",
+        "Configured analytics and tracking systems (Google Analytics, Tag Manager, conversion tracking)",
+        "Identified and resolved technical SEO issues impacting search rankings",
+        "Assisted in internal automation and software development initiatives to streamline workflows"
+      ]
+    },
+    {
       role: "Clinic IT Intern",
       company: "Interprofessional Clinic, Appalachian Institute for Health and Wellness",
       period: "Summer 2023",
@@ -96,6 +109,8 @@ export default function Portfolio() {
         "Utilized electronic health record platforms to help aid healthcare providers delivering service to patients",
         "Installed software updates and patches to machines in accordance to HIPAA legislation",
         "Configured a machine which would help aid healthcare providers in diagnosing autism early in young children",
+        "Participated in new technology and emerging developmental programs utilized by the clinic",
+        "Resolved hardware issues when helping to setup a PA system",
         "Documented the program and the technical assessment which the machine conducted"
       ]
     },
@@ -240,7 +255,7 @@ export default function Portfolio() {
                   <GraduationCap className="text-cyan-400 mb-3" size={32} />
                   <h3 className="text-xl font-semibold mb-2">Education</h3>
                   
-                  <p className="text-slate-400">B.S. in Computer Science</p>
+                  <p className="text-slate-400">B.S. in Computer Science, cum laude</p>
                   <p className="text-slate-500">Appalachian State University, December 2025</p>
                   <br/>
                   <p className="text-slate-400">Associate of Arts </p>
