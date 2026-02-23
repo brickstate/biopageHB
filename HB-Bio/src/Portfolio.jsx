@@ -94,7 +94,7 @@ export default function Portfolio() {
     {
       role: "Web & Technology Specialist Intern",
       company: "SEC Marketing Group",
-      period: "February 2023 - Current",
+      period: "February 2026 - Current",
       description: [
         "Developed and maintained client websites with custom front-end components using JavaScript, HTML, and CSS",
         "Implemented technical SEO optimizations",
@@ -107,7 +107,7 @@ export default function Portfolio() {
     {
       role: "Clinic IT Intern",
       company: "Interprofessional Clinic, Appalachian Institute for Health and Wellness",
-      period: "Summer 2023",
+      period: "Summer 2025",
       description: [
         "Resolved network connectivity issues in a timely manner",
         "Utilized electronic health record platforms to help aid healthcare providers delivering service to patients",
