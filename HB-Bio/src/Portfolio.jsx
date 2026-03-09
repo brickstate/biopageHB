@@ -84,10 +84,10 @@ export default function Portfolio() {
   ];
 
   const skills = {
-    "Frontend": ["React", "TypeScript", "JavaScript", "HTML/CSS", "Tailwind CSS", "D3.js"],
+    "Frontend": ["React", "JavaScript", "HTML/CSS", "Tailwind CSS", "D3.js"],
     "Backend": ["Node.js", "Express", "Python", "RESTful APIs"],
-    "Database": ["MySQL", "Database Schema Design"],
-    "Tools": ["Git", "Google Cloud Platform", "Docker", "CI/CD", "Websockets"]
+    "Database": ["MySQL","MongoDB Atlas","Database Schema Design"],
+    "Tools": ["Git", "Google Cloud Platform", "Docker", "Render (PAAS)", "Websockets"]
   };
 
   const experience = [
