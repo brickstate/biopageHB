@@ -86,7 +86,7 @@ export default function Portfolio() {
   const skills = {
     "Frontend": ["React", "JavaScript", "HTML/CSS", "Tailwind CSS", "D3.js"],
     "Backend": ["Node.js", "Express", "Python", "RESTful APIs"],
-    "Database": ["MySQL","MongoDB Atlas","Database Schema Design"],
+    "Database": ["MySQL", "MongoDB Atlas", "Database Schema Design"],
     "Tools": ["Git", "Google Cloud Platform", "Docker", "Render (PAAS)", "Websockets"]
   };
 
@@ -390,7 +390,9 @@ export default function Portfolio() {
               Whether you have a question or just want to say hi, feel free to reach out!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=brickersan@gmail.com" className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all flex items-center gap-2">
+              <a
+                href="mailto:brickersan@gmail.com?"
+                className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all flex items-center gap-2">
                 <Mail size={20} />
                 Send Email
               </a>
