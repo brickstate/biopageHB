@@ -92,13 +92,16 @@ export default function Portfolio() {
 
   const experience = [
     {
-      role: "Web & Technology Specialist Intern",
+      role: "Web & Technology Specialist",
       company: "SEC Marketing Group",
-      period: "February 2026 - Current",
+      period: "February 2026 - March 2026",
       description: [
-        "Developed and maintained client websites with custom front-end components using JavaScript, HTML, and CSS",
-        "Implemented technical SEO optimizations",
-        "Improved site performance through page speed optimization and responsive design adjustments",
+        "Developed client websites on WordPress with custom front-end components using JavaScript, HTML, and CSS",
+        "Collaborated with the social media marketing team to implement new features and optimize existing ones based on client feedback",
+        "Wrote detailed blogs to increase user engagment within a client website",
+        "Created internal documentation for the company to assist onboarding new employees",
+        "Improved site performance through responsiveness design adjustments",
+        "Designed and implemented a custom email routing automation tool to streamline client communications into internal work logs",
         "Configured analytics and tracking systems (Google Analytics, Tag Manager, conversion tracking)",
         "Identified and resolved technical SEO issues impacting search rankings",
         "Assisted in internal automation and software development initiatives to streamline workflows"
@@ -119,7 +122,17 @@ export default function Portfolio() {
       ]
     },
     {
-      role: "Server & Bartender",
+      role: "Server",
+      company: "Texas Roadhouse",
+      period: "March 2026 - Present",
+      description: [
+        "Delivering fast, friendly service in a high volume environment while ensuring an excellent guest experience.",
+        "Skilled at clear communication, menu knowledge, and upselling specials to increase guest satisfaction and overall sales.",
+        "Known for strong work ethic, multitasking under pressure, and maintaining a positive attitude while collaborating with team members to keep service running smoothly."
+      ]
+    },
+    {
+      role: "Bartender",
       company: "Macado's",
       period: "April 2023 - December 2025",
       description: [
